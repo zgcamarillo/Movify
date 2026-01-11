@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Similar Movies Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--SEARCH BAR-->
+    <section id="search_bar">
+        <h2 id="search-form_heading"> Movify</h2>
+        <form id="search_form-bar">
+            <input type="text" id="search-bar" placeholder="Find something great...">
+            <button id="search_btn-bar">Search</button>
+        </form>
+    </section>
+
+    <!--BG VIDEO-->
+    <video autoplay muted id="bgvideo">
+        <source src="assets/background.mp4" type="video/mp4">
+        Your browser does not support the video tag
+    </video>
+
+    <main id="main_wrapper">
+        <div id="main_content">
+            <h1>Movify</h1>
+            <p>Because scrolling for 40min is not a hobby</p>
+
+            <form id="search_form">
+                <input type="text" id="search" placeholder="Find something great...">
+                <button id="search_btn">Search</button>
+            </form>
+        </div>
+    </main>
+
+    <section id="results_wrapper">
+        <ul id="results"></ul>
+    </section>
+        
+    <script src="script.js"></script>
+</body>
+</html>
