@@ -1,6 +1,7 @@
+// api/search.js
 export default async function handler(req, res) {
   const token = process.env.TMDB_TOKEN;
-  if (!token) return res.status(500).json({ error: "No TMDB token set!" });
+  if (!token) return res.status(500).json({ error: "TMDB token not set!" });
 
   try {
     const query = req.query.q || '';
@@ -21,8 +22,3 @@ export default async function handler(req, res) {
     res.status(500).json({ error: 'TMDB request failed' });
   }
 }
-// Example in client-side JS
-fetch('/api/search?q=Inception')
-  .then(res => res.json())
-  .then(data => console.log(data));
-//TESTING VERCEL DEPLOYMENT 
